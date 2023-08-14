@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "downlevelIteration": true,
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "allowJs": false,
+        "incremental": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "noEmit": true,
+        "esModuleInterop": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "jsx": "preserve",
+        "tsBuildInfoFile": ".tsbuildinfo",
+        "baseUrl": "./",
+        "paths": {
+            "@public/*": ["public/*"],
+            "@app/*": ["src/*"]
+        },
+        "plugins": [
+            {
+                "name": "typescript-plugin-css-modules"
+            }
+        ]
+    },
+    "exclude": ["dist", "node_modules"],
+    "include": ["**/*.ts", "**/*.tsx"]
+}
